@@ -11,7 +11,7 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public Car hello() {
-		Car car = new Car("Abc", "Xyz");
+		Car car = new Car("MYVI", "Perodua");
 		return car;
 	}
 
