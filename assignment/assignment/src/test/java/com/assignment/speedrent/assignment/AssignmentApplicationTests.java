@@ -24,6 +24,7 @@ public class AssignmentApplicationTests {
 	@Test
 	public void testHello() throws JSONException {
 		String expected = "{\"name\":MYVI,\"manufacturer\":\"Perodua\"}";
+		
 		ResponseEntity<String> response = restTemplate.getForEntity("/api/hello", String.class);
 		assertEquals(HttpStatus.OK, response.getStatusCode());
 		assertEquals(MediaType.APPLICATION_JSON_UTF8, response.getHeaders().getContentType());
